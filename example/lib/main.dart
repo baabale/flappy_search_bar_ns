@@ -32,8 +32,8 @@ class _HomeState extends State<Home> {
   final SearchBarController<Post> _searchBarController = SearchBarController();
   bool isReplay = false;
 
-  Future<List<Post>> _getALlPosts(String text) async {
-    await Future.delayed(Duration(seconds: text.length == 4 ? 10 : 1));
+  Future<List<Post>> _getALlPosts(String? text) async {
+    await Future.delayed(Duration(seconds: text!.length == 4 ? 10 : 1));
     if (isReplay) return [Post("Replaying !", "Replaying body")];
     if (text.length == 5) throw Error();
     if (text.length == 6) return [];
