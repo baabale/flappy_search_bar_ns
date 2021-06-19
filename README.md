@@ -1,4 +1,4 @@
-# flappy_search_bar
+# flappy_search_bar_ns
 
 A SearchBar widget handling most of search cases.
 
